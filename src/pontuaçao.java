@@ -21,7 +21,16 @@ public class pontuaçao {
 	System.out.printf("Qual o ticket medio?");
 	ticket=sc.nextDouble();
 	total=compras*ticket;
+	//LEITURA DE OUTROS DADOS
+	System.out.println("Quantas vezes o cliente atrasou o pagamento?");
+	pagamento=sc.nextInt();
+	char pagamentoDBC;
+	System.out.println("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?");
+	pagamentoDBC=sc.next().charAt(0);
 	
+	
+		
+		
 		
 		sc.close();
 	}
