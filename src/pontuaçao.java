@@ -28,6 +28,27 @@ public class pontuaçao {
 	System.out.println("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?");
 	pagamentoDBC=sc.next().charAt(0);
 	
+	//SCORE DE VOLUME DE COMPRAS
+	int pontos;
+	if(compras==0) {
+		pontos=0;
+	}
+	else if(compras>2 && compras<=3000) {
+		pontos=20;
+	}
+	else if(compras<2 && compras<3000) {
+		pontos =40;
+	}
+	else {
+		pontos=60;
+	}
+	
+	System.out.println("Score de volume de compras = " + pontos);
+	
+	
+	
+	
+	
 	
 		
 		
